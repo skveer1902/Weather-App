@@ -3,7 +3,7 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 import { NextResponse } from 'next/server';
-import { getDb } from '@/lib/db';
+import { getDb } from '@/db';
 
 function toCsv(rows) {
   if (!rows.length) return '';
